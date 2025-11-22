@@ -1,45 +1,41 @@
-# Exp.No:20  
-## SEB - ARITHMETIC CALCULATION USING CLASS
+# Exp.No:4e 
+## SEB - Using Lambda Function to Perform an Arithmetic Expression in Python
 
----
+
 
 ### AIM  
-To write a Python program to perform addition and division operations using a class. The class should be named `Saveetha`, and the function names should be `setvalues` (to set `a` and `b` values), `add`, and `div`. The program should handle the following cases:  
-- `choice 1` → Perform addition  
-- `choice 2` → Perform division  
-- `choice 0` → Exit  
-- For other choices, print 'Invalid choice'
-
----
+To write a Python program that takes three numbers as input and evaluates an expression using a lambda function.
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Create a class `Saveetha`.  
-3. Define the following methods inside the `Saveetha` class:  
-   - `__init__(self)`: Initializes `a` and `b` to zero.  
-   - `setvalues(self, a, b)`: Sets the values of `a` and `b`.  
-   - `add(self)`: Performs the addition operation.  
-   - `div(self)`: Performs the division operation. If `b` is zero, returns an error message for division by zero.  
-4. Create a `main()` function.  
-5. Take input from the user for the values of `a` and `b` using `setvalues(a, b)` method.  
-6. Use a `while True` loop to repeatedly ask the user for a choice:  
-   - If the choice is 1, call the `add()` method and print the result.  
-   - If the choice is 2, call the `div()` method and print the result. Handle division by zero.  
-   - If the choice is 0, print "Exiting!" and exit the loop.  
-   - If the choice is not 1, 2, or 0, print "Invalid choice".  
-7. Terminate the program.
-
----
+```
+1.Start the program.
+2.Accept the first number from the user and convert it to an integer; store it in variable x.
+3.Accept the second number from the user, convert it to an integer, and store it in y.
+4.Accept the third number from the user, convert it to an integer, and store it in z.
+5.Define a lambda function f that takes three parameters and computes the expression:
+  divide the first number by 10,
+  divide the second number by 2,
+  multiply the result with the third number,
+  then add both parts.
+6.Call the lambda function f(x, y, z) to evaluate the expression.
+7.Display the final calculated result to the user.
+8.End the program.
+```
 
 ### PROGRAM
 
 ```
-
-
-
+x=int(input())
+y=int(input())
+z=int(input())
+f=lambda x,y,z:(x / 10) + (y / 2) * z
+print(f(x,y,z))
 ```
 
 ### OUTPUT
 
+<img width="1201" height="440" alt="image" src="https://github.com/user-attachments/assets/a9ff53db-5623-4fc3-b02e-39d05758cd9d" />
+
 ### RESULT
+The program successfully takes three numbers, processes them using a lambda function, and displays the final calculated output.
