@@ -1,7 +1,7 @@
 # Exp.No:4a
 ## CLASS AND OBJECTS - Measuring Memory Size of Dictionaries Using getsizeof() in Python
 ### AIM  
-Measuring Memory Size of Dictionaries Using getsizeof() in Python
+To write a Python program that creates multiple dictionaries and displays the memory size occupied by each dictionary using the getsizeof() function from the sys module.
 ### ALGORITHM
 ```
 1.Start the program.
